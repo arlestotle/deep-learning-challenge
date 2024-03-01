@@ -1,0 +1,26 @@
+# Analysis deep-learning-challenge 
+
+## Purpose
+The purpose of this analysis was to create a tool that can help select the applicants for funding with the best change of success in their ventures. 
+
+## Questions 
+1. What variable(s) are the target(s) for your model?
+    - Application type and classifications were used as targets. 
+    
+2. What variable(s) are the features for your model?
+    - All columns from the charity_data.csv minus the EIN and NAME (which were dropped) were used for the model. 
+    
+3. What variable(s) should be removed from the input data because they are neither targets nor features?
+    - EIN and NAME
+    
+4. How many neurons, layers, and activation functions did you select for your neural  network model, and why?
+    - In my original model, my first hidden layer used relu activation with 5 units, in my second later used tanh with 8 units, my output layer used sigmoid activation with one unit and ran with 20 epochs. My accuracy score was 72.66%
+    
+5. Were you able to achieve the target model performance?
+    - Unfortunately, I was not able to reach the target model performance, the highest accuracy I was able to acheive was 73.22% accuracy.
+    
+6. What steps did you take in your attempts to increase model performance?
+    - When trying to optimize the models performance I tried changing the activation elements (relu, sigmoid, and tanh) and changing the units in the hidden layers. My optimized model first hidden layer had relu activation with 7 units, the second layer had sigmoid activation with 14 units, and the outer layer had sigmoid activation with 1 unit. I noticed when changing the activation of the outer layer there was a decrease in the accuracy sore, so for my optimized model I kept it constant with the original model. 
+    
+## Conclusion
+The various layers used in deep machine learning is useful as they help models learn how to predict and classify information. 
